@@ -1,0 +1,10 @@
+<h2>TODAY : <%= myDate %> </h2>
+<br/>
+<h2> <%= myText %> </h2>
+<script src="http://localhost/nodeJsChat/ChatApp/.tmp/public/js/socket.io.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    var myResponse = "<%= myText %>";
+	var socket = io.connect();
+    socket.emit('responseThisDate', {'myResponseOnThis': myResponse}); 
+</script>
