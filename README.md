@@ -17,6 +17,7 @@ From terminal-
 sails new MessageEmitApp
 
 cd MessageEmitApp
+
 2. Run "git clone https://github.com/Jaydeep717/sailsJs-sockeIO.git"
 
 copy into the newly created directory.
