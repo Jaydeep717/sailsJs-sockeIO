@@ -1,0 +1,21 @@
+<input type='text' id='thisDate' />
+<div id="newMessageForm">
+    <textarea id="message" placeholder="Enter your message here:"></textarea>
+    <button id="postMessageButton">Add Message</button>
+</div>
+<script src="http://localhost/nodeJsChat/ChatApp/.tmp/public/js/socket.io.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    var socket = io.connect();
+    socket.on('requestThisDate', function(data){
+        $('#thisDate').val(data.myThisDate);
+    });
+$('#postMessageButton').click(function() { 
+	var message = $('#message').val();
+	if(message!=''){
+		window.location = "/chat?message="+message;
+	} else {
+		alert('You need to insert Text');
+	}
+});
+</script>
