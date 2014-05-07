@@ -12,17 +12,17 @@ You must have Node.js, sailsJs (IF not use : sudo npm install -g sails) installe
 
 From terminal-
 
-1. cd into the directory you'd like to install the app.
+* cd into the directory you'd like to install the app.
 
 sails new MessageEmitApp
 
 cd MessageEmitApp
 
-2. Run "git clone https://github.com/Jaydeep717/sailsJs-sockeIO.git"
+* Run "git clone https://github.com/Jaydeep717/sailsJs-sockeIO.git"
 
 copy into the newly created directory.
 
-3. Run "sails lift"
+* Run "sails lift"
 
 To see : localhost:1337
 
